@@ -42,8 +42,8 @@
 				background-color: var(--bg);
 				color: var(--text);
 				font-family:
-					"Inter",
 					"Tiro Bangla",
+					"Inter",
 					-apple-system,
 					BlinkMacSystemFont,
 					"Segoe UI",
@@ -67,7 +67,7 @@
 
 			.top-navbar .brand {
 				font-weight: 800;
-				font-size: 1.1rem;
+				font-size: 1.6rem;
 				color: var(--primary);
 				letter-spacing: -0.3px;
 				white-space: nowrap;
@@ -75,20 +75,22 @@
 
 			.snacks-bill-btn {
 				display: inline-flex;
-				align-items: center;
-				gap: 6px;
+				gap: 7px;
 				background: transparent;
 				border: 1.5px solid var(--border);
 				border-radius: 20px;
 				color: var(--text-secondary);
-				font-family: "Inter", sans-serif;
-				font-size: 0.78rem;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
+				font-size: 1rem;
 				font-weight: 600;
-				padding: 5px 14px;
+				padding: 5px 15px;
 				text-decoration: none;
 				transition: all 0.2s;
 				white-space: nowrap;
 				flex-shrink: 0;
+				justify-content: center;
+				align-items: center;
+				margin: 0 9px;
 			}
 
 			.snacks-bill-btn:hover {
@@ -141,25 +143,19 @@
 
 			.page-header {
 				text-align: center;
-				padding: 36px 16px 8px;
+				padding: 16px 16px 8px;
 			}
 			.page-header h2 {
-				font-size: 1.4rem;
+				font-size: 1.8rem;
 				font-weight: 800;
 				color: var(--primary);
 				letter-spacing: -0.3px;
 			}
 			.page-header h4 {
-				font-size: 0.95rem;
+				font-size: 1.2rem;
 				font-weight: 500;
 				color: var(--text-secondary);
 				margin-top: 4px;
-			}
-			.page-header h5 {
-				font-size: 0.88rem;
-				font-weight: 500;
-				color: var(--text-secondary);
-				margin-top: 2px;
 			}
 
 			.app-card {
@@ -181,19 +177,18 @@
 			}
 
 			.app-card .card-heading {
-				font-size: 0.82rem;
-				font-weight: 700;
+				font-size: 1rem;
+				font-weight: 600;
 				color: var(--text-secondary);
-				text-transform: uppercase;
 				letter-spacing: 0.8px;
 				margin-bottom: 18px;
 			}
 
 			.form-label {
-				font-size: 0.84rem;
+				font-size: 0.9rem;
 				font-weight: 600;
 				color: var(--text);
-				margin-bottom: 6px;
+				margin-bottom: 3px;
 			}
 			.form-label i {
 				margin-right: 5px;
@@ -201,7 +196,7 @@
 
 			.form-select,
 			.form-control {
-				font-family: "Inter", sans-serif;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
 				border: 1.5px solid var(--border);
 				border-radius: 10px;
 				padding: 10px 14px;
@@ -226,7 +221,7 @@
 				border: none;
 				border-radius: 10px;
 				color: #fff;
-				font-family: "Inter", sans-serif;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
 				font-weight: 600;
 				font-size: 0.9rem;
 				padding: 11px 0;
@@ -249,7 +244,7 @@
 				border: none;
 				border-radius: 10px;
 				color: #fff;
-				font-family: "Inter", sans-serif;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
 				font-weight: 600;
 				font-size: 0.88rem;
 				padding: 9px 28px;
@@ -349,7 +344,7 @@
 				border-top: 1px solid var(--border);
 			}
 			.modal-title {
-				font-family: "Inter", sans-serif;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
 				font-weight: 700;
 			}
 
@@ -518,6 +513,50 @@
 				color: var(--text-secondary);
 				border-top: 1px solid var(--border);
 				background: var(--surface);
+				font-family: "Inter", sans-serif;
+			}
+
+			/* ── History Refresh Button ── */
+			.history-refresh-btn {
+				width: 32px;
+				height: 32px;
+				border-radius: 8px;
+				border: 1.5px solid var(--border);
+				background: var(--surface);
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				color: var(--text-secondary);
+				transition: all 0.2s;
+				font-size: 0.82rem;
+				flex-shrink: 0;
+			}
+
+			.history-refresh-btn:hover {
+				background: var(--success);
+				color: #fff;
+				border-color: var(--success);
+				transform: translateY(-1px);
+				box-shadow: 0 3px 10px rgba(22, 163, 74, 0.25);
+			}
+
+			.history-refresh-btn:disabled {
+				opacity: 0.5;
+				cursor: not-allowed;
+				transform: none;
+				box-shadow: none;
+				background: var(--surface);
+				color: var(--text-secondary);
+				border-color: var(--border);
+			}
+
+			/* ── Quick Add Feedback ── */
+			.quick-add-feedback-error {
+				color: #dc2626;
+			}
+			.quick-add-feedback-success {
+				color: #16a34a;
 			}
 
 			/* ── Artisan Modal ── */
@@ -555,7 +594,7 @@
 			}
 
 			.artisan-modal-title {
-				font-family: "Inter", sans-serif;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
 				font-weight: 700;
 				font-size: 1rem;
 				color: var(--text);
@@ -630,7 +669,7 @@
 				border: 1.5px solid var(--border);
 				border-radius: 10px;
 				padding: 9px 14px 9px 38px;
-				font-family: "Inter", sans-serif;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
 				font-size: 0.85rem;
 				background: var(--surface);
 				transition:
@@ -654,7 +693,7 @@
 				border: 1.5px solid var(--border);
 				border-radius: 10px;
 				color: var(--text);
-				font-family: "Inter", sans-serif;
+				font-family: "Tiro Bangla", "Inter", sans-serif;
 				font-weight: 600;
 				font-size: 0.82rem;
 				padding: 9px 16px;
@@ -751,8 +790,8 @@
 
 			.artisan-table-wrap .table tbody td {
 				border-color: var(--border);
-				font-size: 0.88rem;
-				padding: 10px;
+				font-size: 1rem;
+				padding: 5px;
 				vertical-align: middle;
 				color: var(--text);
 			}
@@ -794,7 +833,7 @@
 					border-color 0.2s,
 					box-shadow 0.2s,
 					background 0.2s;
-				font-family: "Inter", sans-serif !important;
+				font-family: "Tiro Bangla", "Inter", sans-serif !important;
 			}
 
 			.artisan-days-input:focus {
@@ -872,18 +911,27 @@
 			<div
 				class="container d-flex align-items-center justify-content-between gap-2"
 			>
-				<span class="brand"
-					><i class="fas fa-route me-2"></i>Monthly Travel Bill</span
-				>
-				<a
-					href="https://script.google.com/macros/s/AKfycbyWQmY8zlVSarYIEpRdgk0F8E09VQjWd_e3NJMr4sfu75TJXw_QOYmOoiU4hx6-YtbM/exec"
-					target="_blank"
-					class="snacks-bill-btn"
-					title="Open Snacks Bill Generator"
-				>
-					<i class="fas fa-mug-hot"></i>
-					<span class="btn-text">Go to Snacks Bill</span>
-				</a>
+				<span class="brand"><i class="fas fa-route me-2"></i>যাতায়াত বিল</span>
+				<div class="d-flex justify-content-between align-items-center me-2">
+					<a
+						href="https://script.google.com/macros/s/AKfycbyWQmY8zlVSarYIEpRdgk0F8E09VQjWd_e3NJMr4sfu75TJXw_QOYmOoiU4hx6-YtbM/exec"
+						target="_blank"
+						class="snacks-bill-btn"
+						title="স্ন্যাকস বিল জেনারেটর খুলুন"
+					>
+						<i class="fas fa-mug-hot"></i>
+						<span class="btn-text">নাস্তার বিলে যান</span>
+					</a>
+					<a
+						href="https://script.google.com/a/macros/brac.net/s/AKfycbwR0CSqmEOKE_mQB5QuVq96guzoCjWnn0JkU-Y83iHWvrdNLXpg6S1AnvQqMh_h3weKKA/exec"
+						target="_blank"
+						class="snacks-bill-btn"
+						title="স্ন্যাকস বিল জেনারেটর খুলুন"
+					>
+						<i class="fa-solid fa-user-clock me-2"></i>
+						<span class="btn-text">হাজিরা বোনাসে যান</span>
+					</a>
+				</div>
 				<div class="month-input-wrap">
 					<i class="fas fa-calendar-days"></i>
 					<input type="month" id="billMonth" />
@@ -894,7 +942,7 @@
 		<div id="loadingOverlay">
 			<div class="loading-box fade-in-simple">
 				<i class="fas fa-file-export confirm-icon-animate"></i>
-				<p id="loadingText">Generating your travel bill...</p>
+				<p id="loadingText">আপনার যাতায়াত বিল তৈরি হচ্ছে...</p>
 				<div class="progress-wrapper">
 					<div class="progress-bar-striped-animated"></div>
 				</div>
@@ -903,36 +951,36 @@
 
 		<div class="container" style="max-width: 960px">
 			<div class="page-header fade-in-simple">
-				<h2>Ayesha Abed Foundation — Gorpara, Manikganj</h2>
-				<h4>Aarong Production Center</h4>
-				<h5>Monthly Travel Bill</h5>
+				<h2>আয়েশা আবেদ ফাউন্ডেশন — গড়পাড়া, মানিকগঞ্জ</h2>
+				<h4>আড়ং প্রোডাকশন সেন্টার</h4>
 			</div>
-			<div class="row g-4 mt-1 mb-5">
+			<div class="row g-4 mb-5">
 				<div class="col-lg-6">
 					<div class="app-card card-blue-top fade-in-simple">
 						<div class="card-heading">
-							<i class="fas fa-pen-to-square me-1"></i> Create New Bill
+							<i class="fas fa-pen-to-square me-1"></i> নতুন বিল তৈরি করুন
 						</div>
 						<div class="mb-3">
 							<label for="sectionSelect" class="form-label"
-								><i class="fas fa-layer-group text-primary"></i> Select Section
-								Name</label
+								><i class="fas fa-layer-group text-primary"></i> সেকশনের নাম
+								নির্বাচন করুন</label
 							>
 							<select class="form-select" id="sectionSelect">
-								<option value="" disabled selected>Loading sections...</option>
+								<option value="" disabled selected>সেকশন লোড হচ্ছে...</option>
 							</select>
 						</div>
 						<div class="mb-4">
 							<label for="travelRate" class="form-label"
-								><i class="fas fa-money-bill-wave text-warning"></i> Travel Rate
-								(Tk./Day)</label
+								><i class="fas fa-money-bill-wave text-warning"></i> যাতায়াত
+								ভাতার হার (টাকা/দিন) <span class="text-danger">*</span></label
 							>
 							<input
 								type="number"
 								class="form-control"
 								id="travelRate"
-								placeholder="Enter rate per day"
+								placeholder="প্রতিদিনের হার লিখুন"
 								min="1"
+								required
 							/>
 						</div>
 						<button
@@ -940,19 +988,50 @@
 							onclick="loadArtisans()"
 							id="loadBtn"
 						>
-							<i class="fas fa-users me-1"></i> Load Artisans
+							<i class="fas fa-users me-1"></i> কর্মী লোড করুন
 						</button>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="app-card card-green-top overflow-auto fade-in-simple">
-						<div class="card-heading">
-							<i class="fas fa-clock-rotate-left me-1"></i> Today's Generated
-							Bills
+						<div class="d-flex align-items-center justify-content-between mb-3">
+							<div class="card-heading" style="margin-bottom: 0">
+								<i class="fas fa-clock-rotate-left me-1"></i> আজকের তৈরিকৃত
+								বিলসমূহ
+							</div>
+							<button
+								class="history-refresh-btn"
+								onclick="refreshHistory()"
+								id="historyRefreshBtn"
+								style="display: none"
+								title="রিফ্রেশ করুন"
+							>
+								<i class="fas fa-sync-alt"></i>
+							</button>
 						</div>
 						<div id="historyContent">
-							<div class="history-empty">
-								<i class="fas fa-spinner fa-spin"></i> Loading...
+							<div class="history-empty" style="padding: 36px 16px">
+								<div
+									style="
+										font-size: 2.2rem;
+										color: var(--text-secondary);
+										opacity: 0.25;
+										margin-bottom: 12px;
+									"
+								>
+									<i class="fas fa-folder-open"></i>
+								</div>
+								<p class="mb-3" style="font-size: 0.88rem">
+									আজকের তৈরিকৃত বিলসমূহ দেখুন
+								</p>
+								<button
+									class="btn btn-generate"
+									onclick="refreshHistory()"
+									id="loadHistoryBtn"
+									style="padding: 9px 28px; font-size: 0.85rem"
+								>
+									<i class="fas fa-download me-1"></i> বিল লোড করুন
+								</button>
 							</div>
 						</div>
 					</div>
@@ -979,10 +1058,7 @@
 									<i class="fas fa-clipboard-list"></i>
 								</div>
 								<div>
-									<div class="artisan-modal-title">Select Artisans</div>
-									<div class="artisan-modal-subtitle">
-										Choose workers &amp; enter present days for bill generation
-									</div>
+									<div class="artisan-modal-title">কর্মী নির্বাচন করুন</div>
 								</div>
 							</div>
 							<div class="d-flex align-items-center gap-3">
@@ -991,7 +1067,7 @@
 									type="button"
 									class="artisan-modal-close"
 									data-bs-dismiss="modal"
-									aria-label="Close"
+									aria-label="বন্ধ করুন"
 								>
 									<i class="fas fa-times"></i>
 								</button>
@@ -1012,7 +1088,7 @@
 										checked
 									/>
 									<label class="form-check-label" for="selectAll"
-										>Select All</label
+										>সব নির্বাচন</label
 									>
 								</div>
 							</div>
@@ -1022,7 +1098,7 @@
 									type="text"
 									class="artisan-search-input"
 									id="artisanSearch"
-									placeholder="Search by name or code..."
+									placeholder="নাম বা কোড দিয়ে খুঁজুন..."
 									oninput="filterArtisans()"
 								/>
 							</div>
@@ -1031,7 +1107,7 @@
 								type="button"
 								onclick="toggleQuickAdd()"
 							>
-								<i class="fas fa-user-plus me-1"></i> Add Artisans
+								<i class="fas fa-user-plus me-1"></i> কর্মী যোগ করুন
 							</button>
 						</div>
 					</div>
@@ -1045,24 +1121,24 @@
 							<div class="row g-2 align-items-end">
 								<div class="col-sm-5">
 									<label class="artisan-field-label"
-										>Artisan Name <span class="text-danger">*</span></label
+										>কর্মীর নাম <span class="text-danger">*</span></label
 									>
 									<input
 										type="text"
 										class="form-control form-control-sm artisan-field-input"
 										id="quickAddName"
-										placeholder="Enter name..."
+										placeholder="নাম লিখুন..."
 									/>
 								</div>
 								<div class="col-sm-4">
 									<label class="artisan-field-label"
-										>Code <span class="text-muted">(Optional)</span></label
+										>কোড নং <span class="text-muted">(ঐচ্ছিক)</span></label
 									>
 									<input
 										type="text"
 										class="form-control form-control-sm artisan-field-input"
 										id="quickAddCode"
-										placeholder="Enter code..."
+										placeholder="কোড লিখুন..."
 									/>
 								</div>
 								<div class="col-sm-3">
@@ -1071,7 +1147,7 @@
 										id="quickAddBtn"
 										onclick="quickAddArtisan()"
 									>
-										<i class="fas fa-plus-circle me-1"></i> Add
+										<i class="fas fa-plus-circle me-1"></i> যোগ করুন
 									</button>
 								</div>
 							</div>
@@ -1089,20 +1165,20 @@
 						>
 							<thead>
 								<tr>
-									<th class="text-center" style="width: 5%">SL</th>
+									<th class="text-center" style="width: 5%">ক্রঃ</th>
 									<th class="text-center" style="width: 8%">
 										<i
 											class="fas fa-check-double me-1"
 											style="font-size: 0.7rem; opacity: 0.7"
 										></i
-										>Pick
+										>নির্বাচন
 									</th>
-									<th style="width: 28%">Artisan Name</th>
+									<th style="width: 28%">কর্মীর নাম</th>
 									<th class="text-center" style="width: 18%">
-										Total Present Day(s)
+										মোট উপস্থিত দিন
 									</th>
-									<th class="text-center" style="width: 16%">Code</th>
-									<th class="text-center" style="width: 10%">Action</th>
+									<th class="text-center" style="width: 16%">কোড নং</th>
+									<th class="text-center" style="width: 10%">অ্যাকশন</th>
 								</tr>
 							</thead>
 							<tbody id="artisanTableBody"></tbody>
@@ -1116,7 +1192,7 @@
 							onclick="showConfirmation()"
 							id="generateBtn"
 						>
-							<i class="fas fa-file-pdf me-2"></i> Generate Travel Bill
+							<i class="fas fa-file-pdf me-2"></i> যাতায়াত বিল তৈরি করুন
 						</button>
 					</div>
 				</div>
@@ -1151,7 +1227,7 @@
 					</div>
 					<div class="modal-body p-4 text-center">
 						<h6 class="mb-3 text-secondary" style="font-weight: 600">
-							Are you sure you want to generate?
+							আপনি কি বিল তৈরি করতে নিশ্চিত?
 						</h6>
 					</div>
 					<div class="modal-footer">
@@ -1160,14 +1236,15 @@
 							class="btn btn-outline-secondary btn-sm"
 							onclick="goBackToArtisans()"
 						>
-							<i class="fas fa-arrow-left me-1"></i> Back
+							<i class="fas fa-arrow-left me-1"></i> ফিরে যান
 						</button>
 						<button
 							type="button"
 							class="btn btn-generate btn-sm"
 							onclick="confirmAndGenerate()"
 						>
-							<i class="fas fa-check-double me-1 confirm-icon-animate"></i> Yes
+							<i class="fas fa-check-double me-1 confirm-icon-animate"></i>
+							হ্যাঁ
 						</button>
 					</div>
 				</div>
@@ -1202,7 +1279,7 @@
 							class="btn btn-secondary btn-sm"
 							data-bs-dismiss="modal"
 						>
-							Cancel
+							বাতিল
 						</button>
 						<button
 							type="button"
@@ -1221,7 +1298,7 @@
 				<div class="modal-content border-danger">
 					<div class="modal-header bg-danger text-white">
 						<h5 class="modal-title">
-							<i class="fas fa-exclamation-triangle me-1"></i> Error
+							<i class="fas fa-exclamation-triangle me-1"></i> ত্রুটি
 						</h5>
 						<button
 							type="button"
@@ -1238,7 +1315,7 @@
 							class="btn btn-secondary btn-sm"
 							data-bs-dismiss="modal"
 						>
-							Close
+							বন্ধ করুন
 						</button>
 					</div>
 				</div>
@@ -1254,7 +1331,7 @@
 						style="background: linear-gradient(135deg, #16a34a, #15803d)"
 					>
 						<h5 class="modal-title text-white">
-							<i class="fas fa-check-circle me-1"></i> Success
+							<i class="fas fa-check-circle me-1"></i> সফল
 						</h5>
 						<button
 							type="button"
@@ -1271,7 +1348,7 @@
 							class="btn btn-outline-success btn-sm"
 							style="display: none"
 						>
-							<i class="fas fa-external-link-alt me-1"></i> Open in Google Drive
+							<i class="fas fa-external-link-alt me-1"></i> গুগল ড্রাইভে খুলুন
 						</a>
 					</div>
 					<div class="modal-footer">
@@ -1280,7 +1357,7 @@
 							class="btn btn-secondary btn-sm"
 							data-bs-dismiss="modal"
 						>
-							Close
+							বন্ধ করুন
 						</button>
 					</div>
 				</div>
@@ -1310,6 +1387,14 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 		<script>
+			/* ── বাংলা সংখ্যা রূপান্তরকারী (ফ্রন্টএন্ডের জন্য) ── */
+			function toBanglaSmall(n) {
+				var bd = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"];
+				return String(n).replace(/[0-9]/g, function (d) {
+					return bd[parseInt(d)];
+				});
+			}
+
 			function escHtml(str) {
 				var d = document.createElement("div");
 				d.appendChild(document.createTextNode(str));
@@ -1329,7 +1414,7 @@
 
 			function showLoading(msg) {
 				document.getElementById("loadingText").textContent =
-					msg || "Processing...";
+					msg || "প্রক্রিয়াকরণ হচ্ছে...";
 				document.getElementById("loadingOverlay").classList.add("active");
 			}
 
@@ -1361,23 +1446,24 @@
 			function handleInitialData(data) {
 				var select = document.getElementById("sectionSelect");
 				select.innerHTML =
-					'<option value="" disabled selected>— Select a Section —</option>';
+					'<option value="" disabled selected>— সেকশন নির্বাচন করুন —</option>';
 				data.sections.forEach(function (sec) {
 					var opt = document.createElement("option");
 					opt.value = sec;
 					opt.textContent = sec;
 					select.appendChild(opt);
 				});
-				if (data.travelRate)
-					document.getElementById("travelRate").value = data.travelRate;
-				refreshHistory();
+				/* হিস্ট্রি অটো-লোড বাদ দেওয়া হয়েছে — ব্যবহারকারী বাটনে ক্লিক করলে লোড হবে */
 			}
 
 			function renderHistory(bills) {
 				var container = document.getElementById("historyContent");
+				var refreshBtn = document.getElementById("historyRefreshBtn");
+				if (refreshBtn) refreshBtn.style.display = "inline-flex";
+
 				if (!bills || bills.length === 0) {
 					container.innerHTML =
-						'<div class="history-empty"><i class="fas fa-inbox me-2"></i>No bills generated yet.</div>';
+						'<div class="history-empty"><i class="fas fa-inbox me-2"></i>এখনো কোনো বিল তৈরি হয়নি।</div>';
 					return;
 				}
 				var html = '<ul class="history-list">';
@@ -1393,10 +1479,10 @@
 						safeUrl +
 						"', '" +
 						safeSection +
-						'\')" title="Delete this bill"><i class="fas fa-trash-alt"></i></button>' +
+						'\')" title="এই বিলটি মুছুন"><i class="fas fa-trash-alt"></i></button>' +
 						'<a href="' +
 						escHtml(bill.url) +
-						'" target="_blank" class="h-link" title="Open in Drive"><i class="fas fa-external-link-alt"></i></a>' +
+						'" target="_blank" class="h-link" title="ড্রাইভে খুলুন"><i class="fas fa-external-link-alt"></i></a>' +
 						"</div></li>";
 				});
 				html += "</ul>";
@@ -1404,40 +1490,59 @@
 			}
 
 			function refreshHistory() {
-				google.script.run.withSuccessHandler(renderHistory).getHistory();
+				var refreshBtn = document.getElementById("historyRefreshBtn");
+				var container = document.getElementById("historyContent");
+
+				if (refreshBtn) {
+					refreshBtn.disabled = true;
+					refreshBtn.innerHTML = '<i class="fas fa-sync-alt fa-spin"></i>';
+				}
+				container.innerHTML =
+					'<div class="history-empty"><i class="fas fa-spinner fa-spin"></i> লোড হচ্ছে...</div>';
+
+				google.script.run
+					.withSuccessHandler(function (bills) {
+						renderHistory(bills);
+						if (refreshBtn) {
+							refreshBtn.disabled = false;
+							refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i>';
+						}
+					})
+					.getHistory();
 			}
 
 			function loadArtisans() {
 				var section = document.getElementById("sectionSelect").value;
 				var rate = document.getElementById("travelRate").value;
 				var monthVal = document.getElementById("billMonth").value;
-				if (!monthVal) return showError("Please select a month.");
-				if (!section) return showError("Please select a section name.");
+				if (!monthVal) return showError("অনুগ্রহ করে মাস নির্বাচন করুন।");
+				if (!section)
+					return showError("অনুগ্রহ করে সেকশনের নাম নির্বাচন করুন।");
 				if (!rate || rate <= 0)
-					return showError("Please enter a valid Travel Rate.");
+					return showError("অনুগ্রহ করে সঠিক যাতায়াত ভাতার হার লিখুন।");
 				var btn = document.getElementById("loadBtn");
 				btn.innerHTML =
-					'<i class="fas fa-spinner fa-spin me-1"></i> Loading...';
+					'<i class="fas fa-spinner fa-spin me-1"></i> লোড হচ্ছে...';
 				btn.disabled = true;
 				google.script.run
 					.withSuccessHandler(showArtisansModal)
 					.withFailureHandler(function (err) {
-						btn.innerHTML = '<i class="fas fa-users me-1"></i> Load Artisans';
+						btn.innerHTML = '<i class="fas fa-users me-1"></i> কর্মী লোড করুন';
 						btn.disabled = false;
-						showError("Failed to load artisans: " + err.message);
+						showError("কর্মী লোড করতে সমস্যা হয়েছে: " + err.message);
 					})
 					.getArtisans(section);
 			}
 
 			function showArtisansModal(artisans) {
 				var btn = document.getElementById("loadBtn");
-				btn.innerHTML = '<i class="fas fa-users me-1"></i> Load Artisans';
+				btn.innerHTML = '<i class="fas fa-users me-1"></i> কর্মী লোড করুন';
 				btn.disabled = false;
 				var tbody = document.getElementById("artisanTableBody");
 				tbody.innerHTML = "";
 				if (artisans.length === 0) {
 					tbody.innerHTML =
-						'<tr><td colspan="6" style="border: none;"><div class="empty-artisan-state text-center"><i class="fas fa-user-slash d-block"></i><p>No artisans found in this section.</p></div></td></tr>';
+						'<tr><td colspan="6" style="border: none;"><div class="empty-artisan-state text-center"><i class="fas fa-user-slash d-block"></i><p>এই সেকশনে কোনো কর্মী পাওয়া যায়নি।</p></div></td></tr>';
 				} else {
 					artisans.forEach(function (artisan, i) {
 						var safeJson = escHtml(JSON.stringify(artisan));
@@ -1445,7 +1550,7 @@
 						tbody.innerHTML +=
 							"<tr>" +
 							'<td class="text-center align-middle">' +
-							(i + 1) +
+							toBanglaSmall(i + 1) +
 							"</td>" +
 							'<td class="text-center align-middle"><input class="form-check-input artisan-checkbox" type="checkbox" value=\'' +
 							safeJson +
@@ -1457,7 +1562,7 @@
 							'<td class="text-center align-middle">' +
 							escHtml(artisan.code) +
 							"</td>" +
-							'<td class="text-center align-middle"><button class="btn-delete-artisan" title="Remove artisan" onclick="deleteArtisan(\'' +
+							'<td class="text-center align-middle"><button class="btn-delete-artisan" title="কর্মী সরান" onclick="deleteArtisan(\'' +
 							safeName +
 							'\', this)"><i class="fas fa-trash-alt"></i></button></td>' +
 							"</tr>";
@@ -1478,7 +1583,8 @@
 				).length;
 				var el = document.getElementById("selectCount");
 				if (!el) return;
-				el.textContent = selected + " / " + total + " Selected";
+				el.textContent =
+					toBanglaSmall(selected) + " / " + toBanglaSmall(total) + " নির্বাচিত";
 				el.className = "badge ";
 				if (total === 0) el.classList.add("bg-secondary");
 				else if (selected === total) el.classList.add("badge-all-selected");
@@ -1538,7 +1644,7 @@
 				var addBtn = document.getElementById("quickAddBtn");
 				if (!name) {
 					feedback.innerHTML =
-						'<i class="fas fa-exclamation-circle me-1"></i> Artisan name is required.';
+						'<i class="fas fa-exclamation-circle me-1"></i> কর্মীর নাম আবশ্যক।';
 					feedback.className = "mt-2 quick-add-feedback-error";
 					document.getElementById("quickAddName").focus();
 					return;
@@ -1549,7 +1655,8 @@
 				google.script.run
 					.withSuccessHandler(function (res) {
 						addBtn.disabled = false;
-						addBtn.innerHTML = '<i class="fas fa-plus-circle me-1"></i> Add';
+						addBtn.innerHTML =
+							'<i class="fas fa-plus-circle me-1"></i> যোগ করুন';
 						if (res.success) {
 							feedback.innerHTML =
 								'<i class="fas fa-check-circle me-1"></i> ' +
@@ -1571,9 +1678,10 @@
 					})
 					.withFailureHandler(function (err) {
 						addBtn.disabled = false;
-						addBtn.innerHTML = '<i class="fas fa-plus-circle me-1"></i> Add';
+						addBtn.innerHTML =
+							'<i class="fas fa-plus-circle me-1"></i> যোগ করুন';
 						feedback.innerHTML =
-							'<i class="fas fa-times-circle me-1"></i> Error: ' +
+							'<i class="fas fa-times-circle me-1"></i> ত্রুটি: ' +
 							escHtml(err.message);
 						feedback.className = "mt-2 quick-add-feedback-error";
 					})
@@ -1601,7 +1709,7 @@
 				tbody.innerHTML = "";
 				if (!artisans || artisans.length === 0) {
 					tbody.innerHTML =
-						'<tr><td colspan="6" style="border: none;"><div class="empty-artisan-state text-center"><i class="fas fa-user-slash d-block"></i><p>No artisans found in this section.</p></div></td></tr>';
+						'<tr><td colspan="6" style="border: none;"><div class="empty-artisan-state text-center"><i class="fas fa-user-slash d-block"></i><p>এই সেকশনে কোনো কর্মী পাওয়া যায়নি।</p></div></td></tr>';
 				} else {
 					artisans.forEach(function (artisan, i) {
 						var safeJson = escHtml(JSON.stringify(artisan));
@@ -1617,7 +1725,7 @@
 						tbody.innerHTML +=
 							"<tr>" +
 							'<td class="text-center align-middle">' +
-							(i + 1) +
+							toBanglaSmall(i + 1) +
 							"</td>" +
 							'<td class="text-center align-middle"><input class="form-check-input artisan-checkbox" type="checkbox" value=\'' +
 							safeJson +
@@ -1633,7 +1741,7 @@
 							'<td class="text-center align-middle">' +
 							escHtml(artisan.code) +
 							"</td>" +
-							'<td class="text-center align-middle"><button class="btn-delete-artisan" title="Remove artisan" onclick="deleteArtisan(\'' +
+							'<td class="text-center align-middle"><button class="btn-delete-artisan" title="কর্মী সরান" onclick="deleteArtisan(\'' +
 							safeName +
 							'\', this)"><i class="fas fa-trash-alt"></i></button></td>' +
 							"</tr>";
@@ -1678,12 +1786,12 @@
 
 			function deleteArtisan(artisanName, btnElement) {
 				showDeleteConfirm(
-					'<i class="fas fa-trash-alt me-1"></i> Confirm Delete',
+					'<i class="fas fa-trash-alt me-1"></i> মুছে ফেলার নিশ্চয়ন',
 					"bg-danger text-white",
-					"Are you sure you want to permanently remove <strong>" +
+					"আপনি কি নিশ্চিত যে <strong>" +
 						escHtml(artisanName) +
-						"</strong> from this section?",
-					'<i class="fas fa-trash-alt me-1"></i> Confirm Delete',
+						"</strong>-কে এই সেকশন থেকে স্থায়ীভাবে সরাতে চান?",
+					'<i class="fas fa-trash-alt me-1"></i> মুছে ফেলুন',
 					function () {
 						var row = btnElement.closest("tr");
 						var section = document.getElementById("sectionSelect").value;
@@ -1719,7 +1827,7 @@
 									.forEach(function (b) {
 										b.disabled = false;
 									});
-								showError("Failed to remove artisan: " + err.message);
+								showError("কর্মী সরাতে সমস্যা: " + err.message);
 							})
 							.removeArtisan(section, artisanName);
 					},
@@ -1728,12 +1836,12 @@
 
 			function deleteBillEntry(url, sectionName) {
 				showDeleteConfirm(
-					'<i class="fas fa-file-circle-xmark me-1"></i> Delete Bill',
+					'<i class="fas fa-file-circle-xmark me-1"></i> বিল মুছুন',
 					"bg-warning text-dark",
-					"Are you sure you want to delete the bill for <strong>" +
+					"আপনি কি নিশ্চিত যে <strong>" +
 						escHtml(sectionName) +
-						"</strong>? The PDF will be permanently removed from Drive.",
-					'<i class="fas fa-trash-alt me-1"></i> Delete Bill',
+						"</strong>-এর বিলটি মুছে ফেলতে চান? PDFটি ড্রাইভ থেকে স্থায়ীভাবে মুছে যাবে।",
+					'<i class="fas fa-trash-alt me-1"></i> বিল মুছুন',
 					function () {
 						google.script.run
 							.withSuccessHandler(function (res) {
@@ -1741,7 +1849,7 @@
 								else showError(res.message);
 							})
 							.withFailureHandler(function (err) {
-								showError("Failed to delete bill: " + err.message);
+								showError("বিল মুছে ফেলতে সমস্যা: " + err.message);
 							})
 							.deleteBill(url);
 					},
@@ -1753,9 +1861,9 @@
 				var rate = document.getElementById("travelRate").value;
 				var monthVal = document.getElementById("billMonth").value;
 				var checkboxes = document.querySelectorAll(".artisan-checkbox:checked");
-				if (!monthVal) return showError("Please select a month.");
+				if (!monthVal) return showError("অনুগ্রহ করে মাস নির্বাচন করুন।");
 				if (checkboxes.length === 0)
-					return showError("Please select at least one artisan.");
+					return showError("অনুগ্রহ করে কমপক্ষে একজন কর্মী নির্বাচন করুন।");
 
 				var selectedData = [];
 				var invalidArtisans = [];
@@ -1778,12 +1886,13 @@
 					var displayNames =
 						invalidArtisans.length > 3
 							? invalidArtisans.slice(0, 3).join(", ") +
-								" and " +
-								(invalidArtisans.length - 3) +
-								" more"
+								" এবং আরও " +
+								toBanglaSmall(invalidArtisans.length - 3) +
+								" জন"
 							: invalidArtisans.join(", ");
 					return showError(
-						"Please enter valid present days for: " + displayNames,
+						"অনুগ্রহ করে নিচের কর্মীদের জন্য সঠিক উপস্থিতির দিন লিখুন: " +
+							displayNames,
 					);
 				}
 
@@ -1812,7 +1921,7 @@
 
 			function confirmAndGenerate() {
 				confirmModalInstance.hide();
-				showLoading("Generating your travel bill...");
+				showLoading("আপনার যাতায়াত বিল তৈরি হচ্ছে...");
 				google.script.run
 					.withSuccessHandler(function (res) {
 						hideLoading();
@@ -1822,18 +1931,19 @@
 							link.href = res.url;
 							link.style.display = "inline-block";
 							document.getElementById("sectionSelect").selectedIndex = 0;
+							document.getElementById("travelRate").value = "";
 							document.getElementById("artisanTableBody").innerHTML = "";
 							document.getElementById("selectAll").checked = true;
 							successModal.show();
 							refreshHistory();
 						} else {
-							showError("Failed: " + res.message);
+							showError("ব্যর্থ: " + res.message);
 						}
 						pendingBillData = null;
 					})
 					.withFailureHandler(function (err) {
 						hideLoading();
-						showError("Network Error: " + err.message);
+						showError("নেটওয়ার্ক ত্রুটি: " + err.message);
 						pendingBillData = null;
 					})
 					.generateBills(
